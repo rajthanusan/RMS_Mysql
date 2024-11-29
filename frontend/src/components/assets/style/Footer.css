@@ -1,0 +1,31 @@
+/* Base styling for footer list */
+.footer-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  }
+  
+  /* Medium screens (tablets and small devices) */
+  @media (max-width: 1024px) {
+    .footer-list {
+      grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust grid for medium screens */
+      gap: 15px;
+    }
+  }
+  
+  /* Small screens (mobile phones) */
+  @media (max-width: 768px) {
+    .footer-list {
+      grid-template-columns: 1fr; /* Single column for mobile */
+      gap: 10px;
+    }
+  }
+  
+  /* Extra small screens (phones in portrait mode) */
+  @media (max-width: 480px) {
+    .footer-list {
+      grid-template-columns: 1fr; /* Single column for extra small screens */
+      gap: 8px;
+    }
+  }
+  
